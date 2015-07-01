@@ -1,0 +1,155 @@
+$backgroundColor: #B9B9B5;
+$headerColor: #1D1D1D;
+$DWAbColor: #DBA716;
+$titleColor: #A58500;
+
+body {
+  background-color: $backgroundColor;
+}
+
+.pageWrapper {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  height: 100%;
+  background-color: $backgroundColor;
+}
+
+.headerWrapper {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 70px;
+  background-color: $headerColor;
+  .DWAbWrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width:25%;
+    height: 100%;
+    .DWAb{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 2.5vmax;
+      width: 70%;
+      height: 60%;
+      background-color: $DWAbColor;
+      margin: 4%;
+      padding: 2%;
+      border-radius: 4px;
+      font-family: serif;
+      object-fit: contain;
+    }
+  }
+  .inputWrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    height: 100%;
+    input {
+      width: 90%;
+      height: 55%;
+      font-size: 2.5vmax;
+      border-radius: 4px;
+    }
+  }
+  .selectWrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 10%;
+    height: 100%;
+    select {
+      width: auto;
+      height: 60%;
+    }
+  }
+  .searchWrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 10%;
+    height: 100%;
+    button {
+      width: 70%;
+      height: 60%;
+      background-color: $DWAbColor;
+      border-radius: 4px;
+      text-align: center;
+      span {
+        font-size: 2.5vmax;
+        text-align: center;
+      }
+    }
+  }
+}
+
+.movieItemWrapper {
+  width: 100%;
+  height: 600px;
+  .coverImg {
+    width: 50%;
+    height: 100%;
+    float: left;
+    img {
+      margin: 0;
+      width: 100%;
+      height: 100%;
+    }
+  }
+}
+
+.movieInfoWrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  height: 100%;
+  font-size: 2vmax;
+  a {
+    width: 100%;
+    margin-left: 5%;
+  }
+  .releaseDate {
+    width: 100%;
+    text-align: left;
+    margin-left: 5%;
+
+  }
+  .plot {
+    width: 100%;
+    text-align: left;
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+  .rating {
+    width: 100%;
+    text-align: left;
+    margin-left: 5%;
+  }
+  .formWrapper {
+    width: 100%;
+    height: 50%;
+
+    form {
+      width: 100%;
+      text-align: center;
+      margin-left: auto;
+      margin-right: auto;
+      margin-top: 10%;
+      textarea {
+        height: 100px;
+        width: 70%;
+        text-align: left;
+      }
+
+      select {
+        width: 70%;
+        height: 2vmax;
+      }
+    }
+  }
+}

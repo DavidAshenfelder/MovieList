@@ -1,0 +1,125 @@
+body {
+  background-color: #B9B9B5; }
+
+.pageWrapper {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  height: 100%;
+  background-color: #B9B9B5; }
+
+.headerWrapper {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 70px;
+  background-color: #1D1D1D; }
+  .headerWrapper .DWAbWrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 25%;
+    height: 100%; }
+    .headerWrapper .DWAbWrapper .DWAb {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 2.5vmax;
+      width: 70%;
+      height: 60%;
+      background-color: #DBA716;
+      margin: 4%;
+      padding: 2%;
+      border-radius: 4px;
+      font-family: serif;
+      object-fit: contain; }
+  .headerWrapper .inputWrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    height: 100%; }
+    .headerWrapper .inputWrapper input {
+      width: 90%;
+      height: 55%;
+      font-size: 2.5vmax;
+      border-radius: 4px; }
+  .headerWrapper .selectWrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 10%;
+    height: 100%; }
+    .headerWrapper .selectWrapper select {
+      width: auto;
+      height: 60%; }
+  .headerWrapper .searchWrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 10%;
+    height: 100%; }
+    .headerWrapper .searchWrapper button {
+      width: 70%;
+      height: 60%;
+      background-color: #DBA716;
+      border-radius: 4px;
+      text-align: center; }
+      .headerWrapper .searchWrapper button span {
+        font-size: 2.5vmax;
+        text-align: center; }
+
+.movieItemWrapper {
+  width: 100%;
+  height: 600px; }
+  .movieItemWrapper .coverImg {
+    width: 50%;
+    height: 100%;
+    float: left; }
+    .movieItemWrapper .coverImg img {
+      margin: 0;
+      width: 100%;
+      height: 100%; }
+
+.movieInfoWrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  height: 100%;
+  font-size: 2vmax; }
+  .movieInfoWrapper a {
+    width: 100%;
+    margin-left: 5%; }
+  .movieInfoWrapper .releaseDate {
+    width: 100%;
+    text-align: left;
+    margin-left: 5%; }
+  .movieInfoWrapper .plot {
+    width: 100%;
+    text-align: left;
+    margin-left: 5%;
+    margin-right: 5%; }
+  .movieInfoWrapper .rating {
+    width: 100%;
+    text-align: left;
+    margin-left: 5%; }
+  .movieInfoWrapper .formWrapper {
+    width: 100%;
+    height: 50%; }
+    .movieInfoWrapper .formWrapper form {
+      width: 100%;
+      text-align: center;
+      margin-left: auto;
+      margin-right: auto;
+      margin-top: 10%; }
+      .movieInfoWrapper .formWrapper form textarea {
+        height: 100px;
+        width: 70%;
+        text-align: left; }
+      .movieInfoWrapper .formWrapper form select {
+        width: 70%;
+        height: 2vmax; }
+
+/*# sourceMappingURL=main.css.map */
