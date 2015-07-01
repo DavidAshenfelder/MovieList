@@ -1,18 +1,24 @@
 body {
-  background-color: #B9B9B5; }
+  background-color: #1D1D1D; }
 
 .pageWrapper {
   display: flex;
   flex-wrap: wrap;
   width: 100%;
   height: 100%;
-  background-color: #B9B9B5; }
+  background-color: #1D1D1D; }
+
+.spacerHeader {
+  height: 90px;
+  width: 100%; }
 
 .headerWrapper {
   display: flex;
   align-items: center;
+  position: fixed;
+  top: 0;
+  flex-wrap: wrap;
   width: 100%;
-  height: 70px;
   background-color: #1D1D1D; }
   .headerWrapper .DWAbWrapper {
     display: flex;
@@ -37,7 +43,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 50%;
+    width: 40%;
     height: 100%; }
     .headerWrapper .inputWrapper input {
       width: 90%;
@@ -52,7 +58,8 @@ body {
     height: 100%; }
     .headerWrapper .selectWrapper select {
       width: auto;
-      height: 60%; }
+      height: 60%;
+      font-size: 2vmax; }
   .headerWrapper .searchWrapper {
     display: flex;
     justify-content: center;
@@ -68,27 +75,152 @@ body {
       .headerWrapper .searchWrapper button span {
         font-size: 2.5vmax;
         text-align: center; }
-
-.movieItemWrapper {
-  width: 100%;
-  height: 600px; }
-  .movieItemWrapper .coverImg {
+  .headerWrapper .dropDownWrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 10%;
+    height: 100%; }
+    .headerWrapper .dropDownWrapper button {
+      width: 70%;
+      height: 60%;
+      background-color: #DBA716;
+      border-radius: 4px;
+      text-align: center; }
+      .headerWrapper .dropDownWrapper button span {
+        font-size: 2.5vmax;
+        text-align: center; }
+  .headerWrapper form {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    height: auto; }
+  .headerWrapper .coverInputWrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 50%;
     height: 100%;
-    float: left; }
+    margin-bottom: 1%; }
+    .headerWrapper .coverInputWrapper input {
+      width: 90%;
+      height: 55%;
+      font-size: 2.5vmax;
+      border-radius: 4px; }
+  .headerWrapper .titleInputWrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    height: 100%;
+    margin-bottom: 1%; }
+    .headerWrapper .titleInputWrapper input {
+      width: 90%;
+      height: 55%;
+      font-size: 2.5vmax;
+      border-radius: 4px; }
+  .headerWrapper .yearInputWrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    height: 100%;
+    margin-bottom: 1%; }
+    .headerWrapper .yearInputWrapper input {
+      width: 90%;
+      height: 55%;
+      font-size: 2.5vmax;
+      border-radius: 4px; }
+  .headerWrapper .ratingInputWrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    height: 100%;
+    margin-bottom: 1%; }
+    .headerWrapper .ratingInputWrapper input {
+      width: 90%;
+      height: 55%;
+      font-size: 2.5vmax;
+      border-radius: 4px; }
+  .headerWrapper .plotInputWrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    height: 100%;
+    margin-bottom: 1%; }
+    .headerWrapper .plotInputWrapper input {
+      width: 90%;
+      height: 55%;
+      font-size: 2.5vmax;
+      border-radius: 4px; }
+  .headerWrapper .categoryInputWrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    height: 100%;
+    margin-bottom: 1%; }
+    .headerWrapper .categoryInputWrapper input {
+      width: 90%;
+      height: 55%;
+      font-size: 2.5vmax;
+      border-radius: 4px; }
+  .headerWrapper #pullUpForm {
+    width: 50%;
+    height: 60%;
+    background-color: #DBA716;
+    border-radius: 4px;
+    text-align: center; }
+    .headerWrapper #pullUpForm span {
+      font-size: 2.5vmax;
+      text-align: center; }
+  .headerWrapper #submit {
+    width: 50%;
+    height: 60%;
+    background-color: #DBA716;
+    border-radius: 4px;
+    text-align: center; }
+    .headerWrapper #submit span {
+      font-size: 2.5vmax;
+      text-align: center; }
+
+.movieItemWrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: auto;
+  box-shadow: 3px 3px 3px white;
+  border-radius: 10px;
+  margin: 2%;
+  padding: 2%;
+  background-color: #B9B9B5; }
+  .movieItemWrapper .coverImg {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30%;
+    height: 500px;
+    float: left;
+    border-radius: 10px;
+    background-color: #DBA716; }
     .movieItemWrapper .coverImg img {
       margin: 0;
-      width: 100%;
-      height: 100%; }
+      width: 80%;
+      height: 80%;
+      box-shadow: 3px 3px 3px black; }
 
 .movieInfoWrapper {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  width: 50%;
+  width: 70%;
+  float: right;
   height: 100%;
-  font-size: 2vmax; }
+  font-size: 1.5vmax; }
   .movieInfoWrapper a {
     width: 100%;
     margin-left: 5%; }
@@ -121,5 +253,21 @@ body {
       .movieInfoWrapper .formWrapper form select {
         width: 70%;
         height: 2vmax; }
+  .movieInfoWrapper .delete {
+    width: 30%;
+    height: 60%;
+    background-color: #DBA716;
+    border-radius: 4px;
+    text-align: center;
+    margin: 1%;
+    font-size: 2vmax; }
+  .movieInfoWrapper .update {
+    width: 30%;
+    height: 60%;
+    background-color: #DBA716;
+    border-radius: 4px;
+    text-align: center;
+    margin: 1%;
+    font-size: 2vmax; }
 
 /*# sourceMappingURL=main.css.map */

@@ -3,11 +3,11 @@
 <head>
   <meta charset="UTF-8">
   <title>Document</title>
-  <link rel="stylesheet" href="bower_components/octicons/octicons/octicons.css">
+  <link rel="stylesheet" href="node_modules/octicons/octicons/octicons.css">
   <link rel="stylesheet" href="main.css" media="screen" title="no title" charset="utf-8">
-  <script type="text/template" id="postTmpl">
+  <script type="text/template" id="movieTmpl">
       <div class="coverImg">
-      <img src="<%=coverImg%>" alt="http://www.fillmurray.com/500/600" />
+      <img src="<%=cover%>" alt="http://www.fillmurray.com/500/600" />
       </div>
       <div class="movieInfoWrapper">
         <a href="#"><h3 class="title"><%=title%></h3></a>
@@ -33,64 +33,65 @@
         <button class="update" type="button" name="button">Update</button>
       </div>
   </script>
+  <script id="formTmpl" type="text/template">
+  <form id="inputForm" action="" >
+    <div class="titleInputWrapper">
+      <input name="title" placeholder="Movie Title" type="text">
+    </div>
+    <div class="coverInputWrapper">
+      <input name="cover" placeholder="Cover Image" type="text">
+    </div>
+    <div class="yearInputWrapper">
+      <input name="year" placeholder="Year" type="text">
+    </div>
+    <div class="ratingInputWrapper">
+      <input name="rating" placeholder="Rating" type="text">
+    </div>
+    <div class="categoryInputWrapper">
+      <input name="category" placeholder="Category" type="text">
+    </div>
+    <div class="plotInputWrapper">
+      <input name="plot" placeholder="Plot" type="text">
+    </div>
+    <button id="pullUpForm" type="button" name="button"> <span class="octicon octicon-chevron-up"></span></button>
+    <button id="submit" type="submit" name="button"> <span class="octicon octicon-plus"></span></button>
+  </form>
+  </script>
 </head>
 <body>
   <section class="pageWrapper">
     <div class="headerWrapper">
-      <div class="DWAbWrapper">
-        <div class="DWAb">
-          DWAb
+        <div class="DWAbWrapper">
+          <div class="DWAb">
+            DWAb
+          </div>
         </div>
-      </div>
-      <div class="inputWrapper">
-        <input placeholder="search movies" type="text">
-      </div>
-      <div class="selectWrapper">
-        <select>
-          <option value="all">All</option>
-          <option value="family">Family</option>
-          <option value="action">Action</option>
-          <option value="comedy">Comedy</option>
-        </select>
-      </div>
-      <div class="searchWrapper">
-        <button type="button" name="button"> <span class="octicon octicon-search"> </span></button>
-      </div>
-    </div>
-  <!--   <div class="movieItemWrapper">
-    <div class="coverImg">
-    <img src="http://www.fillmurray.com/500/500" alt="" />
-    </div>
-    <div class="movieInfoWrapper">
-      <a href="#"><h3 class="title">Movie Title</h3></a>
-      <div class="releaseDate">Sept 28, 2014</div>
-      <div class="rating">*****</div>
-      <div class="plot">
-        John Connor sends Kyle Reese back in time to protect Sarah Connor, but when he arrives in 1984, nothing is as he expected it to be.
-      </div>
-      <div class="formWrapper">
-        <form>
-          <textarea placeholder="tell us what you think..." type="text"></textarea>
-          <select class="inputRatings">
-            <option value="0stars">0</option>
-            <option value="1stars">*</option>
-            <option value="2stars">**</option>
-            <option value="3stars">***</option>
-            <option value="4stars">****</option>
-            <option value="4stars">*****</option>
+        <div class="inputWrapper">
+          <input placeholder="search movies" type="text">
+        </div>
+        <div class="selectWrapper">
+          <select>
+            <option value="all">All</option>
+            <option value="family">Family</option>
+            <option value="action">Action</option>
+            <option value="comedy">Comedy</option>
           </select>
-        </form>
-      </div>
+        </div>
+        <div class="searchWrapper">
+          <button type="button" name="button"> <span class="octicon octicon-search"> </span></button>
+        </div>
+        <div class="dropDownWrapper">
+          <button id="dropDown" type="button" name="button"> <span class="octicon octicon-chevron-down"></span></button>
+        </div>
+        <div class="movieForm">
+        </div>
     </div>
-  </div> -->
+    <div class="spacerHeader">
+      
+    </div>
   </section>
 
-  <script type="text/javascript" src="bower_components/jquery/dist/jquery.min.js"></script>
-  <script type="text/javascript" src="bower_components/underscore/underscore-min.js"></script>
-  <script type="text/javascript" src="bower_components/backbone/backbone-min.js"></script>
-  <script src="model.js"></script>
-  <script src="view.js"></script>
-  <script src="app.js"></script>
+<script type="text/javascript" src="bundle.js"></script>
 
 
 </body>

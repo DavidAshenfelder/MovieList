@@ -1,0 +1,21 @@
+{
+  "name": "movielist",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "backbone": "^1.2.1",
+    "browserify": "^10.2.4",
+    "jquery": "^2.1.4",
+    "octicons": "^2.2.0",
+    "serve": "^1.4.0",
+    "underscore": "^1.8.3"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "start": "node_modules/.bin/browserify js/app.js -o bundle.js -d && serve",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}
