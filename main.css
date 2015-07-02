@@ -197,7 +197,7 @@ body {
   margin: 2%;
   padding: 2%;
   background-color: #B9B9B5; }
-  .movieItemWrapper .coverImg {
+  .movieItemWrapper .cover {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -206,7 +206,7 @@ body {
     float: left;
     border-radius: 10px;
     background-color: #DBA716; }
-    .movieItemWrapper .coverImg img {
+    .movieItemWrapper .cover img {
       margin: 0;
       width: 80%;
       height: 80%;
@@ -227,16 +227,25 @@ body {
   .movieInfoWrapper .releaseDate {
     width: 100%;
     text-align: left;
-    margin-left: 5%; }
+    margin-left: 5%;
+    margin: 2%; }
   .movieInfoWrapper .plot {
     width: 100%;
     text-align: left;
     margin-left: 5%;
-    margin-right: 5%; }
+    margin-right: 5%;
+    margin: 2%; }
   .movieInfoWrapper .rating {
     width: 100%;
     text-align: left;
-    margin-left: 5%; }
+    margin-left: 5%;
+    margin: 2%; }
+  .movieInfoWrapper .category {
+    width: 100%;
+    text-align: left;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin: 2%; }
   .movieInfoWrapper .formWrapper {
     width: 100%;
     height: 50%; }
@@ -254,7 +263,7 @@ body {
         width: 70%;
         height: 2vmax; }
   .movieInfoWrapper .delete {
-    width: 30%;
+    width: 20%;
     height: 60%;
     background-color: #DBA716;
     border-radius: 4px;
@@ -262,7 +271,15 @@ body {
     margin: 1%;
     font-size: 2vmax; }
   .movieInfoWrapper .update {
-    width: 30%;
+    width: 20%;
+    height: 60%;
+    background-color: #DBA716;
+    border-radius: 4px;
+    text-align: center;
+    margin: 1%;
+    font-size: 2vmax; }
+  .movieInfoWrapper .submitUpdate {
+    width: 20%;
     height: 60%;
     background-color: #DBA716;
     border-radius: 4px;

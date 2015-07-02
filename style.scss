@@ -245,7 +245,7 @@ body {
   margin: 2%;
   padding: 2%;
   background-color: $backgroundColor;
-  .coverImg {
+  .cover {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -280,6 +280,7 @@ body {
     width: 100%;
     text-align: left;
     margin-left: 5%;
+    margin: 2%;
 
   }
   .plot {
@@ -287,11 +288,20 @@ body {
     text-align: left;
     margin-left: 5%;
     margin-right: 5%;
+    margin: 2%;
   }
   .rating {
     width: 100%;
     text-align: left;
     margin-left: 5%;
+    margin: 2%;
+  }
+  .category {
+    width: 100%;
+    text-align: left;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin: 2%;
   }
   .formWrapper {
     width: 100%;
@@ -316,7 +326,7 @@ body {
     }
   }
   .delete {
-      width: 30%;
+      width: 20%;
       height: 60%;
       background-color: $DWAbColor;
       border-radius: 4px;
@@ -325,7 +335,17 @@ body {
       font-size: 2vmax;
   }
   .update {
-      width: 30%;
+      width: 20%;
+      height: 60%;
+      background-color: $DWAbColor;
+      border-radius: 4px;
+      text-align: center;
+      margin: 1%;
+      font-size: 2vmax;
+  }
+
+  .submitUpdate {
+      width: 20%;
       height: 60%;
       background-color: $DWAbColor;
       border-radius: 4px;

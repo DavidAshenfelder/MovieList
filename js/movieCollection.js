@@ -5,7 +5,7 @@ var MovieModel = require('./movie');
 
 module.exports = Backbone.Collection.extend({
   model: MovieModel,
-  url: 'http://tiy-fee-rest.herokuapp.com/collections/dwab1',
+  url: 'http://tiy-fee-rest.herokuapp.com/collections/dwab2',
   initialize: function(){
     console.log('collections are awesome!');
   },

@@ -6,16 +6,15 @@
   <link rel="stylesheet" href="node_modules/octicons/octicons/octicons.css">
   <link rel="stylesheet" href="main.css" media="screen" title="no title" charset="utf-8">
   <script type="text/template" id="movieTmpl">
-      <div class="coverImg">
+      <div class="cover">
       <img src="<%=cover%>" alt="http://www.fillmurray.com/500/600" />
       </div>
       <div class="movieInfoWrapper">
         <a href="#"><h3 class="title"><%=title%></h3></a>
         <div class="releaseDate"><%=releaseDate%></div>
         <div class="rating"><%=rating%></div>
-        <div class="plot">
-          <%=plot%>
-        </div>
+        <div class="plot"><%=plot%></div>
+        <div class="category"><%=category%></div>
         <div class="formWrapper">
           <form>
             <textarea placeholder="tell us what you think..." type="text"></textarea>
@@ -29,8 +28,9 @@
             </select>
           </form>
         </div>
-        <button class="delete" type="button" name="button">Delete</button>
-        <button class="update" type="button" name="button">Update</button>
+        <button class="delete" type="button" name="button"><span class="octicon octicon-trashcan"></span></button>
+        <button class="update" type="button" name="button"><span class="octicon octicon-diff"></span></button>
+        <button id="submitUpdate" class="submitUpdate" type="button" name="button"><span class="octicon octicon-check"></span></button>
       </div>
   </script>
   <script id="formTmpl" type="text/template">
@@ -42,7 +42,7 @@
       <input name="cover" placeholder="Cover Image" type="text">
     </div>
     <div class="yearInputWrapper">
-      <input name="year" placeholder="Year" type="text">
+      <input name="releaseDate" placeholder="Year" type="text">
     </div>
     <div class="ratingInputWrapper">
       <input name="rating" placeholder="Rating" type="text">
@@ -57,7 +57,34 @@
     <button id="submit" type="submit" name="button"> <span class="octicon octicon-plus"></span></button>
   </form>
   </script>
+  <script id="updateFormTmpl" type="text/template">
+  <form id="inputForm" action="" >
+    <div class="titleInputWrapper">
+      <input name="title" placeholder="Movie Title" type="text">
+    </div>
+    <div class="coverInputWrapper">
+      <input name="cover" placeholder="Cover Image" type="text">
+    </div>
+    <div class="yearInputWrapper">
+      <input name="releaseDate" placeholder="Year" type="text">
+    </div>
+    <div class="ratingInputWrapper">
+      <input name="rating" placeholder="Rating" type="text">
+    </div>
+    <div class="categoryInputWrapper">
+      <input name="category" placeholder="Category" type="text">
+    </div>
+    <div class="plotInputWrapper">
+      <input name="plot" placeholder="Plot" type="text">
+    </div>
+    <button id="pullUpForm" type="button" name="button"> <span class="octicon octicon-chevron-up"></span></button>
+    <button id="submitUpdate" type="submit" name="button"> <span class="octicon octicon-check"></span></button>
+  </form>
+  </script>
 </head>
+
+
+
 <body>
   <section class="pageWrapper">
     <div class="headerWrapper">
@@ -87,7 +114,7 @@
         </div>
     </div>
     <div class="spacerHeader">
-      
+
     </div>
   </section>
 

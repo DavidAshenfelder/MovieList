@@ -6,13 +6,13 @@ var MovieModel = require('./movie');
 
 module.exports = Backbone.View.extend ({
 
-  el: '.headerWrapper',
-  template: _.template($('#formTmpl').html()),
+  el: '.movieItemWrapper',
+  template: _.template($('#updateFormTmpl').html()),
   initialize: function(){
-    console.log(this);
+    this.render();
   },
   events: {
-    'submit form': 'handleSubmit',
+    'click #submitUpdate': 'handleSubmit',
     'click #dropDown': 'formShow',
     'click #pullUpForm': 'formHide'
   },
@@ -24,16 +24,13 @@ module.exports = Backbone.View.extend ({
     return this
   },
 
-  formShow: function() {
-    this.render();
-  },
-
   formHide: function() {
     this.$el.children('#inputForm').remove()
   },
 
   handleSubmit: function(event) {
     event.preventDefault();
+    console.log(this.model);
     this.model.set({
       title: this.$el.find('input[name="title"]').val(),
       cover: this.$el.find('input[name="cover"]').val(),
@@ -42,8 +39,11 @@ module.exports = Backbone.View.extend ({
       plot: this.$el.find('input[name="plot"]').val(),
       category:this.$el.find('input[name="category"]').val(),
     });
-    this.model.save();
+    this.save();
+    console.log(this.collection);
+    console.log(this.model);
     this.collection.add(this.model);
     this.$el.find('input').val('');
+    this.$el.children('#inputForm').remove()
   }
 });
